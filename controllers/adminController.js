@@ -18,10 +18,15 @@ const postEditArticle = (req, res, next) => {
   res.send("Edit Article");
 };
 
+const getDeleteArticle = (req, res, next) => {
+  res.send("Delete Article");
+};
+
 module.exports = {
   getAdminDashboard,
   getAddArticle,
   getEditArticle,
   postAddArticle,
   postEditArticle,
+  getDeleteArticle,
 };

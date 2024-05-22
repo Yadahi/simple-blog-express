@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
-router.get("/", (req, res) => {
-  res.send("Hello World!");
-});
+const articleController = require("../controllers/articleController");
+
+router.get("/:articleId", articleController.getArticle);
 
 module.exports = router;
