@@ -3,7 +3,7 @@ const getAdminDashboard = (req, res, next) => {
 };
 
 const getAddArticle = (req, res, next) => {
-  res.send("Add Article");
+  res.render("admin/edit-article", { pageTitle: "Add Article" });
 };
 
 const postAddArticle = (req, res, next) => {

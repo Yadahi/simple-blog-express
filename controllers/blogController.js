@@ -1,5 +1,5 @@
 const getHomePage = (req, res, next) => {
-  res.send("Home Page");
+  res.render("blog/homepage", { pageTitle: "My Blog", articles: [] });
 };
 
 module.exports = {
